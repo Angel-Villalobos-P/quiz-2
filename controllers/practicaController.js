@@ -68,7 +68,7 @@ export const deletePractica = async (req, res, next) => {
  */
 export const getPracticas = async (req, res, next) => {
   try {
-    const practicas = await Practica.find({});
+    const practicas = await Practica.find({}).populate("id_tema");
     res.json({
       practicas,
       mensaje: "Authorized",

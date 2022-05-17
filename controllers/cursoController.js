@@ -66,7 +66,7 @@ export const deleteCurso = async (req, res, next) => {
  */
 export const getCurses = async (req, res, next) => {
     try {
-        const curses = await Curso.find({});
+        const curses = await Curso.find({}).populate("id_profesor");
         res.json({
             curses,
             mensaje: "Authorized"

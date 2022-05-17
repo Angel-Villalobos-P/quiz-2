@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const curso_practicaSchema = mongoose.Schema({
-  id_profesor: {
+  id_practica: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Practica",
   },

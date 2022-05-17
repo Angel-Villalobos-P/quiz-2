@@ -67,7 +67,10 @@ export const deleteCurso_Practica = async (req, res, next) => {
  */
 export const getCurso_Practica = async (req, res, next) => {
   try {
-    const curso_practicas = await Curso_Practica.find({});
+    const curso_practicas = await Curso_Practica.find({})
+      .populate("id_curso")
+      .populate("id_practica")
+      .exec();
     res.json({
       curso_practicas,
       mensaje: "Authorized",
