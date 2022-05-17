@@ -9,7 +9,8 @@
 
 # Docs
 ## **run**
-> npm install
+> `npm install`  
+> `npm run dev`
 
 ### Acccess 
 > Create a file .env and add this
