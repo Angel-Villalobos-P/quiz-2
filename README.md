@@ -8,6 +8,8 @@
 - Debe contener la arquitectura MVC (Controlador,Router,Model)
 
 # Docs
+## **run**
+> npm install
 
 ### Acccess 
 > Create a file .env and add this
